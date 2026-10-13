@@ -1,0 +1,50 @@
+body{
+    background-color: #FFECD7;
+}
+#content{
+    background-color: #008db1;
+    border: 5px solid #004e63;
+    border-radius: 20px;
+    margin: 15px 500px 5px 500px;
+}
+ul{
+    margin: 0 auto;
+    width: 200px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+ul li{
+    color: #fffffe;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1{
+    color: #fffffe;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+h2 a{
+    color: #91e4fb;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    font-size : 1.3em;
+}
+h3{
+    color: #ffd783;
+    font-family: "Brush Script MT", "Nanum Brush Script", cursive;
+    margin: 50px auto;
+    width: 400px;
+    text-align: center;
+    font-size: 2em;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:#fffffe 5px solid;
+}
