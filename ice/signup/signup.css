@@ -1,0 +1,65 @@
+#myForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    background-color: white;
+}
+#imageGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    background-color: white;
+}
+#imageGrid img {
+    width: 100%;
+    height: 100%;
+}
+#formContainer {
+    width: 400px;
+    margin: 20px auto;
+    border: 12px solid navy;
+    border-radius: 35px;
+    overflow: hidden;
+    background-color: white;
+}
+#closeBtn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 20px;
+}
+.checkbox-section {
+    justify-self: center;
+    margin: 10px;
+}
+#headerImage {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+#headerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+#headerText {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.form-row input {
+    box-sizing: border-box;
+    width: 100%;
+}
