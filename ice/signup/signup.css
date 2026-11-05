@@ -22,6 +22,10 @@
     overflow: hidden;
     background-color: white;
 }
+#formContainer h3 {
+    text-align: center;
+    margin: 10px 0;
+}
 #closeBtn {
     position: absolute;
     top: 15px;
@@ -32,11 +36,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
-    margin: 15px 20px;
+    margin: 10px 20px;
 }
 .checkbox-section {
     justify-self: center;
-    margin: 10px;
+    margin: 10px 10px;
 }
 #headerImage {
     position: relative;
@@ -59,7 +63,12 @@
     color: white;
     text-shadow: 2px 2px 5px black;
 }
-.form-row input {
+.form-row input:not([type="radio"]) {
     box-sizing: border-box;
     width: 100%;
+}
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
