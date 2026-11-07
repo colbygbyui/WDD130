@@ -70,7 +70,7 @@ nav a:hover {
 }
 .home-title {
     font-size: 2.5em;
-    color: #004e63;
+    color: #008db1;
 }
 .button-box {
     margin-top: 25px;
@@ -94,7 +94,6 @@ nav a:hover {
     gap: 30px;
     padding: 40px;
 }
-
 .ice-card, .wwr-card {
     background-color: white;
     border: 2px solid #004e63;
@@ -103,15 +102,11 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-
-.ice-card h2,
-.wwr-card h2 {
-    color: #004e63;
+.ice-card h2, .wwr-card h2 {
+    color: #008db1;
     margin-top: 0;
 }
-
-.ice-card p,
-.wwr-card p {
+.ice-card p, .wwr-card p {
     color: #333333;
     line-height: 1.5;
 }
@@ -122,14 +117,17 @@ nav a:hover {
     background-color: #008db1;
     color: white;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 14px 25px;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
-
 .project-button:hover {
     background-color: #004e63;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Footer */
@@ -137,10 +135,31 @@ footer {
     background-color: #dad9d9;
 }
 
+/* ICE CSS */
+.ice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+.ice-grid section {
+    background-color: white;
+    border: 2px solid #008db1;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+.ice-grid section p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 48px;
+}
 
 /* Mobile layout */
 @media screen and (max-width: 600px) {
-    .home-grid {
+    .home-grid, .ice-grid {
         grid-template-columns: 1fr;
         padding: 20px;
     }
