@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Jobs | The Rec Outpost</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+    <a href="index.html">
+        <img src="images/logo_og.png" alt="Website Logo">
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="browse.html" class="dropbtn">Browse Jobs</a>
+
+            <div class="dropdown-content">
+                <a href="browse.html#outdoor">Outdoor Activities</a>
+                <a href="browse.html#camps">Camps/Youth</a>
+                <a href="browse.html#resorts">Resorts/Attractions</a>
+            </div>
+        </div>
+
+        <a href="compare.html">Compare Jobs</a>
+    </nav>
+</header>
+
+    <main>
+    <!-- COMPARE HERO -->
+    <section class="compare-hero">
+        <h1>Compare Recreation Careers</h1>
+        <p>
+            Not sure which recreation job is right for you?
+            Search for two careers and compare their pay,
+            certifications, schedules, and more.
+        </p>
+    </section>
+
+    <!-- JOB SEARCH -->
+    <section class="compare-section">
+        <h2>Choose Two Jobs to Compare</h2>
+        <div class="compare-search">
+
+            <!-- FIRST JOB -->
+            <div class="job-search-box">
+                <label for="job1">First Job</label>
+                <input
+                    type="text" id="job1" placeholder="Search for a job..." autocomplete="off">
+                <div id="suggestions1"
+                     class="suggestions"></div>
+            </div>
+
+            <!-- SECOND JOB -->
+            <div class="job-search-box">
+                <label for="job2">Second Job</label>
+
+                <input type="text" id="job2" placeholder="Search for a job..." autocomplete="off">
+                <div id="suggestions2"
+                     class="suggestions"></div>
+            </div>
+        </div>
+
+        <!-- COMPARE BUTTON -->
+        <button id="compare-btn" type="button">
+            Compare Jobs
+        </button>
+
+        <p id="compare-message" role="status"></p>
+    </section>
+
+    <!-- COMPARISON RESULTS -->
+    <section id="comparison-results" class="comparison-section" hidden>
+        <h2>Job Comparison</h2>
+        <div class="comparison-container">
+
+            <!-- FIRST JOB RESULTS -->
+            <article class="comparison-card"
+                id="comparison-job1">
+                <h3 id="job1-title">Job One</h3>
+                <div id="job1-details"></div>
+            </article>
+
+            <!-- SECOND JOB RESULTS -->
+            <article class="comparison-card" id="comparison-job2">
+                <h3 id="job2-title">Job Two</h3>
+                <div id="job2-details"></div>
+            </article>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 The Rec Outpost</p>
+        <!-- <a href="site-plan.html">Site Plan</a> -->
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
